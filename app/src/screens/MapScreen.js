@@ -3,7 +3,7 @@ import {
   PanResponder, Platform, useWindowDimensions,
 } from 'react-native';
 import { useRef, useState, useCallback, useEffect } from 'react';
-import { DOS } from '../../App';
+import { DOS } from '../data/theme';
 import { MAP, TRANSPORT_SPEED } from '../data/constants';
 import { CELL_CHAR, tryMove } from '../engine/map';
 import { S } from '../data/strings';

@@ -1,20 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, TouchableOpacity, Platform } from 'react-native';
 import { useEffect, useState, useCallback } from 'react';
+import { DOS } from './src/data/theme';
 import { S } from './src/data/strings';
 import { createInitialState } from './src/engine/gameState';
 import { generateMap } from './src/engine/map';
 import MapScreen from './src/screens/MapScreen';
-
-export const DOS = {
-  bg:     '#000000',
-  cyan:   '#00AAAA',
-  white:  '#AAAAAA',
-  green:  '#00AA00',
-  yellow: '#FFFF55',
-  red:    '#FF5555',
-  font:   Platform.OS === 'web' ? "'Courier New', monospace" : 'monospace',
-};
 
 export default function App() {
   const [screen, setScreen] = useState('splash');
@@ -44,7 +35,6 @@ export default function App() {
 
   const handleMove = useCallback((result) => {
     setGameState(result.state);
-    // Фазы morning/trading/win будут роутиться в Фазе 2
   }, []);
 
   const handleMenu = useCallback(() => {

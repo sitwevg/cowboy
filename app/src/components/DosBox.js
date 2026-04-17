@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-import { DOS } from '../../App';
+import { DOS } from '../data/theme';
 
 // Рамка в DOS-стиле с заголовком
 // props: title, children, style, titleColor
