@@ -1,4 +1,34 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+web-build/
+
+# Expo
 .expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Logs
 *.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Original game (binaries)
+original/*.EXE
+original/*.SAV
