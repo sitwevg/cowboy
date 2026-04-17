@@ -121,6 +121,7 @@ export default function MapScreen({ state, onMove, onMenu }) {
           >
             <Text style={styles.zoomText}>+</Text>
           </TouchableOpacity>
+          <View style={styles.zoomBtnGap} />
           <TouchableOpacity
             style={styles.zoomBtn}
             onPress={() => setZoomIdx(i => Math.max(i - 1, 0))}
@@ -244,7 +245,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRightWidth: 1,
     borderColor: '#333',
-    gap: 8,
+  },
+  zoomBtnGap: {
+    height: 8,
   },
   zoomBtn: {
     width: 22,
@@ -269,7 +272,6 @@ const styles = StyleSheet.create({
   },
   cell: {
     fontFamily: DOS.font,
-    lineHeight: undefined, // будет равен fontSize
   },
   legend: {
     borderTopWidth: 1,
