@@ -92,9 +92,12 @@ function SplashScreen({ onContinue }) {
 
 function MainMenu({ onNewGame, onResume }) {
   const items = [
-    { label: 'Новая игра',  action: onNewGame },
-    { label: 'Продолжить', action: onResume  },
-    { label: 'Выход',      action: null      },
+    { label: 'Новая игра',        action: onNewGame },
+    { label: 'Загрузка игры',     action: null      },
+    { label: 'О авторе и не только', action: null   },
+    { label: 'Стоит взглянуть',   action: null      },
+    { label: 'Возврат к игре',    action: onResume  },
+    { label: 'Выход из Игры',     action: null      },
   ];
 
   return (
